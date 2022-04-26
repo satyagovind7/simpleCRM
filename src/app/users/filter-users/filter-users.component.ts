@@ -20,7 +20,8 @@ export class FilterUsersComponent implements OnInit {
   @Output()
   childevent = new EventEmitter();
 
-  //constructor
+  //constructor234
+  //destructor
   constructor() { }
 
   
