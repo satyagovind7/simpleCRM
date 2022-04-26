@@ -20,7 +20,7 @@ export class FilterUsersComponent implements OnInit {
   @Output()
   childevent = new EventEmitter();
 // comment placed in filter-users
-// somthing
+// added comment
   constructor() { }
 
   
