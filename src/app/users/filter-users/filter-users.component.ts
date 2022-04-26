@@ -19,9 +19,14 @@ export class FilterUsersComponent implements OnInit {
 
   @Output()
   childevent = new EventEmitter();
+<<<<<<< HEAD
 // comment placed in filter-users
 // added comment
   // one more comment
+=======
+
+  //constructor
+>>>>>>> master
   constructor() { }
 
   
