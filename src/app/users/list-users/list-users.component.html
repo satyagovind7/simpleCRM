@@ -1,0 +1,13 @@
+<p>list-users works!</p>
+
+<div>inside list users</div>
+<app-filter-users [data]="'elements'" [tax]="taxable" (childevent)="message=$event"></app-filter-users>
+
+<p>{{message}}</p>
+
+<input #input type="text">
+<button (click)="mess(input.value)">login</button>
+
+<ul *ngFor="let emp of empobj">
+    <li>{{emp.name}}</li>
+</ul>

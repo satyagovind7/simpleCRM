@@ -1,0 +1,119 @@
+<!-- <head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+</head>
+
+<h1>
+
+    {{title}}</h1>
+
+
+<div *ngIf="displayname ; then thenblock ; else elseblock"></div>
+
+<ng-template #thenblock>
+    <h3>display</h3>
+</ng-template>
+
+<ng-template #elseblock>
+    <h3>hidden</h3>
+</ng-template>
+
+<h3></h3>
+
+<div [ngSwitch]="color">
+    <div *ngSwitchCase="'blue'">you have selected blue color</div>
+    <div *ngSwitchCase="'red'">you have selected red color</div>
+    <div *ngSwitchCase="'green'">you have selected green color</div>
+    <div *ngSwitchDefault>pick again</div>
+</div>
+<br>
+<div *ngFor="let color of colors; index as i; odd as o; last as l; first as f">
+    <h3>{{i}} {{o}} {{l}} {{color}}</h3>
+</div>
+
+
+<h2>{{"hello" + color}}</h2>
+
+<app-list-users></app-list-users> -->
+<!-- <app-filter-users></app-filter-users> -->
+
+<!-- <p>{{title | uppercase}}</p> -->
+<!-- lowercase -->
+
+<!-- <div>{{date | date:'medium'}}</div>
+
+<br><br>
+
+<input [(ngModel)]="name" type="text">{{name}}
+<br><br>
+
+<app-empdetail></app-empdetail>
+<app-emplist></app-emplist>
+
+<nav>
+    <button>
+        <a routerLink="/departments" style="text-decoration: none;">Departments</a>
+    </button>
+    <br>
+    <a routerLink="/employee">Emp</a>
+</nav>
+
+<router-outlet></router-outlet>
+
+
+<h1>Form</h1>
+<form #userForm="ngForm" ngNativeValidate>
+    {{ userForm.value | json}}
+    <div class="form-group">
+        Name:
+        <input type="text" placeholder="name" class="form-control" name="name" required nameField="ngModel" pattern="A.*" minlength="3">
+
+    </div>
+
+    <div class="form-group">
+        E-mail:
+        <input type="text" placeholder="mail" class="form-control" ngModel name="email" required #classtest>
+    </div>
+
+    <div>{{classtest.className}}</div>
+
+    <div class="form-group">
+        Phone:
+        <input type="tel" class="form-control" ngModel name="phone" minlength="10">
+    </div>
+
+    <div class="form-group">
+        <select class="form-control">
+            
+            <option selected>I'm intrested in </option>
+            <option *ngFor="let data of data" ngModel name="selection">
+                {{data}}
+                
+        </select>
+    </div>
+    <br>
+    <div class="form-group">
+        Time Prefernce:
+        <br>
+        <input class="form-check-input" type="radio" name="time" value="morning" ngModel> morning
+        <br>
+        <input class="form-check-input" type="radio" name="time" value="evening" ngModel> evening
+    </div>
+
+    <div class="form-group">
+        <input type="checkbox" ngModel name="promotions"> send me the promotions
+    </div>
+
+    <button type="submit" class="btn btn-primary">Submit</button>
+
+</form> -->
+
+<!-- <app-emplist></app-emplist> -->
+<label>Enter the restaurant Name: </label>
+
+<input type="text" placeholder="restaurant name" #name/>
+<button type="submit" (click)="onclick(name.value)">submit</button>
+<div *ngFor="let emp of emp index as i">
+
+    {{emp | json}}
+</div>
+<router-outlet></router-outlet>
